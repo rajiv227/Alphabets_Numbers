@@ -1,0 +1,194 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:background="@color/grey"
+    android:orientation="vertical"
+    
+    >
+
+     <!--ImageView
+        android:id="@+id/back"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:src="@drawable/back" 
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+     	android:onClick="goBack"/-->
+    
+    <ImageView
+        android:id="@+id/numberView"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@drawable/cat_1"
+        android:onClick="playSheep" 
+        android:scaleType="fitXY"
+        
+        />
+     
+    <Button android:id="@+id/one"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_below="@+id/numberView"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="10dp"
+        android:layout_centerVertical="true"
+        android:radius="3dp"
+        style="@style/MyCoolButton"
+        android:text="1"
+        android:textSize="40sp" 
+        android:onClick="playNumber" />
+    
+    <Button android:id="@+id/two"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignTop="@+id/one"
+        android:layout_toRightOf="@+id/one"
+        android:layout_marginLeft="10dp"
+        style="@style/MyCoolButton"
+        android:layout_centerVertical="true"
+        android:text="2"
+        android:textSize="40sp"  
+        android:onClick="playNumber"        />
+    
+    <Button android:id="@+id/three"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignTop="@+id/two"
+        android:layout_toRightOf="@+id/two"
+        android:layout_marginLeft="10dp"
+        style="@style/MyCoolButton"
+        android:layout_centerVertical="true"
+        android:text="3" 
+        android:textSize="40sp" 
+        android:onClick="playNumber"        />
+    
+    <Button android:id="@+id/four"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+style="@style/MyCoolButton"
+        android:layout_below="@+id/one"
+        android:layout_alignLeft="@+id/one"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="10dp"
+        android:textSize="40sp" 
+        android:text="4" 
+        android:onClick="playNumber"        />
+    
+    <Button android:id="@+id/five"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignTop="@+id/four"
+        android:layout_toRightOf="@+id/four"
+        android:layout_marginLeft="10dp"
+        style="@style/MyCoolButton"
+        android:layout_centerVertical="true"
+        android:text="5" 
+        android:textSize="40sp" 
+        android:onClick="playNumber"        />
+    
+    
+    <Button android:id="@+id/six"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        style="@style/MyCoolButton"
+        android:layout_alignTop="@+id/five"
+        android:layout_toRightOf="@+id/five"        
+        android:layout_marginLeft="10dp"
+        android:text="6" 
+        android:textSize="40sp" 
+        android:onClick="playNumber"        />
+    
+    <Button android:id="@+id/seven"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="05dp"
+        style="@style/MyCoolButton"
+        android:layout_below="@+id/four"
+        android:layout_alignLeft="@+id/four"     
+        android:text="7" 
+        android:textSize="40sp" 
+        android:onClick="playNumber"        />
+    
+    <Button android:id="@+id/eight"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_toRightOf="@+id/seven"
+        android:layout_alignTop="@+id/seven"
+        android:layout_marginLeft="10dp"      
+        android:text="8" 
+        android:textSize="40sp" 
+        style="@style/MyCoolButton"
+        android:onClick="playNumber"        />
+    
+    <Button android:id="@+id/nine"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginLeft="10dp"
+        style="@style/MyCoolButton"
+        android:layout_toRightOf="@+id/eight"
+        android:layout_alignTop="@+id/eight"      
+        android:text="9" 
+        android:textSize="40sp" 
+        android:onClick="playNumber"        />
+    
+    <Button android:id="@+id/ten"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        style="@style/MyCoolButton"
+        android:layout_below="@+id/seven"
+        android:layout_marginTop="05dp"
+        android:layout_alignLeft="@+id/seven"      
+        android:text="10" 
+        android:textSize="40sp" 
+        android:onClick="playNumber"/>
+  
+    <Button
+        android:id="@+id/panda"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:background="@drawable/panda"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/ten"
+        android:layout_alignTop="@+id/ten"
+        android:radius="20dp"
+       
+        
+       
+        />
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            
+            android:orientation="vertical" 
+            android:background="@color/white">
+            
+            
+            <Button android:id="@+id/Back"
+		        android:layout_width="100dp"
+		        android:layout_height="40dp"
+		        
+		        style="@style/MyCoolButton"
+		        android:background="@drawable/back_arrow"
+		        android:onClick="processBack"  
+		        />
+        </RelativeLayout>
+    <!--  
+    <ImageView
+        android:id="@+id/rabbit"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:src="@drawable/rabbit"
+
+        android:layout_toRightOf="@+id/ten"
+        android:layout_alignTop="@+id/ten"
+        style="@style/MyCoolButton"
+        android:onClick="playRabbit"
+         
+        />-->
+        
+        
+    
+</RelativeLayout>
